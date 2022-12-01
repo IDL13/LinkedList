@@ -76,6 +76,15 @@ class LinkedList:
             node = node.next_node
         print(node.element)
 
+    def delete_duplicates(self):
+        node = self.head
+        while node and node.next_node != None:
+            if node.next_node.element == node.element:
+                node.next = node.next.next
+            else:
+                node = node.next_node
+        print(self.head)
+
 
 linked_list = LinkedList()
 
@@ -94,5 +103,7 @@ print(linked_list.get_node(3))
 print('\n')
 
 linked_list.assign(3, 777)
+
+linked_list.delete_duplicates()
 
 linked_list.out()
