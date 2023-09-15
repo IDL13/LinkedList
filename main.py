@@ -92,6 +92,8 @@ linked_list.append(10)
 linked_list.append(20)
 linked_list.append(30)
 linked_list.append(40)
+# linked_list.append(45)
+# linked_list.append(45)
 
 linked_list.insert_node(3, 666)
 
